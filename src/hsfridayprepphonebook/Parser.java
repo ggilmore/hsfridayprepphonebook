@@ -30,7 +30,6 @@ public class Parser {
     };
 
     public static void main(String[] args) {
-        Parser p = new Parser();
         if ((args.length > 0) && commandMapping.containsKey(args[0])) {
             System.out.println(commandMapping.get(args[0]).run(
                     Arrays.copyOfRange(args, 1, args.length)));
@@ -41,7 +40,6 @@ public class Parser {
     }
 
     public Parser() {
-
     }
 
     /**
